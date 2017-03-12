@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html lang="sv">
+<head>
+    <meta charset="utf-8"/>
+    <title>Albins Site</title>
+    <link rel="stylesheet" href="style.css" media="screen and (min-width:800px)" />
+    <link href='http://fonts.googleapis.com/css?family=Merienda+One' rel='stylesheet' />
+    <link href="style.css" rel="stylesheet" media="screen and (max-width:800px)" />
+</head>
+
+<!--Detta är sista sidans html dokumentet för min Albin Sjöströms sida-->
+
+<body>
+<header> <!--header med loga, meny och även en dropdownmeny-->
+    <div class="Menubar">
+        <div class="Loga2">
+            <div class="Loga"></div>
+        </div>
+        <ul id="menylista">
+            <li>
+                <a href="http://albins.te-vxo.se/">Hem</a>
+            </li>
+            <li> <!--Dropdownmeny-->
+                <a href="annat.html">Annan Layout</a>
+                <ul>
+                    <li id="boom">
+                        <a id="vald" href="sista.html">En till länk</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="mer.html">Mycket Intressant</a>
+            </li>
+            <li>
+                <a href="lankar.html">Länkar</a>
+            </li>
+        </ul>
+    </div>
+</header>
+<div class="therestofit"> <!--Resten av sidan i sin egen div-->
+    <div class="container">
+        <div class="post">
+            <div class="content">
+                <h1 id="rip">RIP Daniel webbutvecklingslärare 2014-15</h1>
+                <img src="bilder/Gladgubbe.png" alt="bild" name="bild"/>
+                <br/>
+                <a href="#" onclick="dokument.bild.src = 'bilder/sad.jpg';">bild2</a>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
