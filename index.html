@@ -1,55 +1,47 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 
 <html lang="sv">
 <head>
     <meta charset="utf-8"/>
-    <title>Albins Site</title>
+    <title>SkidCountDown</title>
     <link rel="stylesheet" href="style.css" media="screen and (min-width:800px)" />
-    <link href='http://fonts.googleapis.com/css?family=Merienda+One' rel='stylesheet' />
     <link href="style.css" rel="stylesheet" media="screen and (max-width:800px)" />
 </head>
 
-<!--Detta är index / startsida html dokumentet för min Albin Sjöströms sida-->
-
 <body>
-<header> <!--header med loga, meny och även en dropdownmeny-->
-    <div class="Menubar">
-        <div class="Loga2">
-            <div class="Loga"></div>
-        </div>
-        <ul id="menylista">
-            <li>
-                <a id="vald" href="index.html">Hem</a>
-            </li>
-            <li> <!--Dropdownmeny-->
-                <a href="annat.html">Annan Layout</a>
-                <ul>
-                    <li id="boom">
-                        <a href="sista.html">En till länk</a>
-                    </li>
-                </ul>
-            </li>
-            <li>
-                <a href="mer.html">Mycket Intressant</a>
-            </li>
-            <li>
-                <a href="lankar.html">Länkar</a>
-            </li>
-        </ul>
-    </div>
-</header>
-<div class="therestofit"> <!--Resten av sidan i sin egen div-->
-    <div class="container">
-        <div class="post">
-            <div class="content">
-                <h1>WTF</h1>
-                <p>did you just fucking say about me, you little bitch? I’ll have you know I graduated top of my class in the Navy Seals, and I’ve been involved in numerous secret raids on Al-Quaeda, and I have over 300 confirmed kills. I am trained in gorilla warfare and I’m the top sniper in the entire US armed forces.</p>
-                <p>You are nothing to me but just another target. I will wipe you the fuck out with precision the likes of which has never been seen before on this Earth, mark my fucking words. You think you can get away with saying that shit to me over the Internet? Think again, fucker. As we speak I am contacting my secret network of spies across the USA and your IP is being traced right now so you better prepare for the storm, maggot.</p>
-                <p> The storm that wipes out the pathetic little thing you call your life. You’re fucking dead, kid. I can be anywhere, anytime, and I can kill you in over seven hundred ways, and that’s just with my bare hands. Not only am I extensively trained in unarmed combat, but I have access to the entire arsenal of the United States Marine Corps and I will use it to its full extent to wipe your miserable ass off the face of the continent, you little shit.</p>
-                <p> If only you could have known what unholy retribution your little “clever” comment was about to bring down upon you, maybe you would have held your fucking tongue. But you couldn’t, you didn’t, and now you’re paying the price, you goddamn idiot. I will shit fury all over you and you will drown in it. You’re fucking dead, kiddo.</p>
-            </div>
-        </div>
-    </div>
-</div>
+    <img id="jacob"></img>
+   <div>
+             <p id="demo"></p>
+  </div>
+  <script>
+// Set the date we're counting down to
+var countDownDate = new Date("Mar 4, 2018 00:00:00").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get todays date and time
+  var now = new Date().getTime();
+
+  // Find the distance between now an the count down date
+  var distance = countDownDate - now;
+
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  // Display the result in the element with id="demo"
+  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+
+  // If the count down is finished, write some text 
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "Wohoo";
+  }
+}, 1000);
+</script>
 </body>
 </html>

@@ -1,142 +1,16 @@
-/*
-Detta är css dokumentet som går till "index" sidan och även "länkar" sidan.
-Då dom andra sidorna är unika i sig så har dom självständiga css dokument.
-*/
-img{
-   max-width: 600px;
-   max-height: 800px;
+﻿//Style
+
+#jacob{
+   position:fixed;
+   bottom: 0;
+   right: 0;
 }
-.Menubar a:hover{
-   text-decoration: underline;
-}
-.Loga2{
-   width: 88px;
-   height: 100px;
-   float: left;
-   margin:25px 10%;
-}
-.Menubar a{
-   color: black;
-   text-decoration: none;
-   font-size: larger;
-}
-#lanklista a{
-   text-decoration: none;
-   padding: 20px 60px;
-   border: groove black 7px;
-   border-radius: 10px;
-   color: black;
-}
-.Loga:hover{
-   background-image: url("bilder/dedpotato.jpg");
-   background-size: contain;
-   width: 180px;
-   margin-right: 3%;
-}
-.Menubar > ul{
-   margin: 61.5px -10px;
-   display: inline-block;
-} 
+
 body{
-   background-color: lightgrey;
-   font-family: 'Comic Sans MS', sans-serif, serif, fantasy;
+  width: 100%;
+  background-color: white;
 }
-h1:before{
-   content:url("bilder/Gladgubbe.png");
-}
-.content{
-   /*margin-left: 1%;*/
-}
-#vald{
-   color: blue;
-}
-.content > p{
-   margin-left: 2%;
-   font-size: larger;
-}
-.post{
-   margin: 0.8%;
-   /*border: groove;*/
-}
-h1{
-   padding-left: 3%;
-   border-bottom: groove;
-}
-#menylista > li {
-   display: inline-block;
-   padding: 0px 15px;
-   background-color: lightblue;
-   border-radius: 7px;
-   margin-left: 15px;
-   vertical-align: text-top;
-}
-#boom:active{
-   /*content:url("bilder/Rainbow.PNG");*/
-}
-#rip:before{
-   content: url("bilder/sad.jpg");
-}
-#menylista ul{
-   display: none;
-   list-style: none;
-   -webkit-padding-start: 0px;
-}
-#menylista li:hover ul{
-   display: block;
-}
-#lanklista a:hover{
-   background-color: lightblue;
-   /*color: blue;*/
-   border-color: blue;
-}
-#lanklista > li{
-   display: inline-block;
-   font-size: xx-large;
-   margin: 7% 15%;
-}
-#lanklista{
-   -webkit-padding-start: 0px;
-}
-a:active{
-   color: blue;
-}
-a:visited{
-   /*color: purple;*/
-}
-.therestofit {
-   width: 100%;
-   height: 600px;
-}
-.container {
-   width: 90%;
-  /* height: 90%;*/
-   margin: 1% auto;
-   background-color: white;
-   border: black groove 7px;
-   border-radius: 7px;
-}
-.Loga{
-   width: 88px;
-   height: 100px;
-   float: left;
-   background-image: url("bilder/Potato.png");
-   background-color: black;
-   background-size: contain;
-}
-.Menubar{
-   height: 150px;
-   width: 90%;
-   font-family: 'Comic Sans MS', sans-serif, serif, fantasy;
-   font-weight: 900;
-   position: relative;
-   top: 25px;
-   background-color: white;
-   margin: 0 auto;
-   /*outline: black groove 7px;*/
-   border: groove black 7px;
-   border-radius: 7px;
-}
-header{
-   height: 200px;
-   width: 100%;
+
+div{
+  margin: auto;
 }
