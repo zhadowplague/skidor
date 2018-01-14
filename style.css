@@ -10,5 +10,12 @@ body{
 }
 
 div{
-  margin: auto;
+  position:fixed;
+  left:50%;
+   top:50%;
+}
+
+p{
+   font-size:40px;
+   text-decoration:underline;
 }
