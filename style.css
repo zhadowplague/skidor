@@ -1,29 +1,44 @@
-#jacob{
-   position:fixed;
-   bottom: 0;
-   right: 0;
+#backe {
+	
+}
+
+@keyframes racerAnimation {
+	from { top: 25%; }
+	to { top: 75%; }
+}
+
+#racer{
+	animation-name: racerAnimation;
+	animation-duration: 4s;
+	animation-iteration-count: infinite;
 }
 
 body{
-  width: 100%;
-  background-color: white;
+	width: 100%;
+	background-color: white;
 }
 
 div{
-  position:fixed;
-  left:35%;
-   top:25%;
-   padding:10px;
-   border:solid 2px black;
+	position:absolute;
+	left:0;
+	top:0;
+	padding:10px;
 }
 
 p{
-   text-align:center;
-   font-size:40px;
-   text-decoration:underline;
+	text-align:center;
+	font-size:40px;
+	text-decoration:underline;
 }
 
 h4{
-   text-align:center;
-   font-size:34px;
+	text-align:center;
+	font-size:34px;
+}
+
+.center {
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }

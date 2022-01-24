@@ -2,21 +2,22 @@
 
 <html lang="sv">
 <head>
-    <meta charset="utf-8"/>
-    <title>SkidCountDown</title>
-    <link rel="stylesheet" href="style.css" media="screen and (min-width:800px)" />
-    <link href="style.css" rel="stylesheet" media="screen and (max-width:800px)" />
+	<meta charset="utf-8"/>
+	<title>SkidCountDown</title>
+	<link rel="stylesheet" href="style.css" media="screen and (min-width:800px)" />
+	<link href="style.css" rel="stylesheet" media="screen and (max-width:800px)" />
 </head>
 
 <body>
-    <img src="bilder/manspeaking.png" id="jacob"></img>
+	<img src="bilder/backe.jpg" class="center" id="backe"></img>
+	<img src="bilder/skid.gif" class="center" id="racer"></img>
    <div>
-       <h4>Tid kvar tills skidresa</h4>
-       <p id="demo"></p>
+	   <h4>Tid kvar tills skidresa</h4>
+	   <p id="countdownTimer"></p>
   </div>
   <script>
 // Set the date we're counting down to
-var countDownDate = new Date("Mar 4, 2018 00:00:00").getTime();
+var countDownDate = new Date("Mar 10, 2022 00:00:00").getTime();
 
 // Update the count down every 1 second
 var x = setInterval(function() {
@@ -33,14 +34,14 @@ var x = setInterval(function() {
   var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
   var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-  // Display the result in the element with id="demo"
-  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+  // Display the result in the element with id="countdownTimer"
+  document.getElementById("countdownTimer").innerHTML = days + "d " + hours + "h "
   + minutes + "m " + seconds + "s ";
 
   // If the count down is finished, write some text 
   if (distance < 0) {
-    clearInterval(x);
-    document.getElementById("demo").innerHTML = "Wohoo";
+	clearInterval(x);
+	document.getElementById("countdownTimer").innerHTML = "Wooo";
   }
 }, 1000);
 </script>
